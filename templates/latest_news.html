@@ -1,0 +1,7 @@
+<ul>
+  {% for news_article in news[:5]  | sort(attribute='published_date', reverse=true) %}
+  <li><a href="#" class="text-primary">{{ news_article['title'] }}</a> 
+  <i>{{ news_article['published_date']}} - </i><a href="#">{{ news_article['author']}}</a>
+  </li>
+{% endfor %}
+</ul>

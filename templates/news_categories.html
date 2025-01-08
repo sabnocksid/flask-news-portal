@@ -1,0 +1,8 @@
+<ul>
+  {% for category in categories[:5]  | sort(attribute='id', reverse=true) %}
+
+    <li>
+        <a>{{ category['name'] }}</a>
+    </li>
+    {% endfor %}
+</ul>
