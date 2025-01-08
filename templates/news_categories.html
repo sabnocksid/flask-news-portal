@@ -1,7 +1,7 @@
 <ul>
   {% for category in categories[:5]  | sort(attribute='id', reverse=true) %}
 
-    <li>
+    <li class="btn btn-primary">
         <a>{{ category['name'] }}</a>
     </li>
     {% endfor %}
